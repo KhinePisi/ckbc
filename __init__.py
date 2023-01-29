@@ -62,12 +62,12 @@ class Ckbc(PathDataset):
 
 
 class CkbcLiteral(NumericPathDataset):
-    """The Nations dataset with literals."""
+    
 
     training: TriplesNumericLiteralsFactory
 
     def __init__(self, create_inverse_triples: bool = False, **kwargs):
-        """Initialize the Nations dataset with literals.
+        
 
         :param create_inverse_triples: Should inverse triples be created? Defaults to false.
         :param kwargs: keyword arguments passed to :class:`pykeen.datasets.base.PathDataset`.
