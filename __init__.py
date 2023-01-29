@@ -29,25 +29,10 @@ CKBC_LITERALS_PATH = HERE.joinpath("literals.txt")
 
 @parse_docdata
 class Ckbc(PathDataset):
-    """The CKBC dataset.
-
-    ---
-    name: Ckbc
-    statistics:
-        entities: 14
-        relations: 55
-        training: 1592
-        testing: 201
-        validation: 199
-        triples: 1992
-    citation:
-        author: Zhenfeng Lei
-        year: 2017
-        github: ZhenfengLei/KGDatasets
-    """
+  
 
     def __init__(self, create_inverse_triples: bool = False, **kwargs):
-        """Initialize the Nations dataset.
+       
 
         :param create_inverse_triples: Should inverse triples be created? Defaults to false.
         :param kwargs: keyword arguments passed to :class:`pykeen.datasets.base.PathDataset`.
